@@ -1,9 +1,5 @@
 package fi.kimb.cometddemo;
 
-import jakarta.annotation.PostConstruct;
-import jakarta.annotation.PreDestroy;
-import jakarta.inject.Inject;
-import jakarta.servlet.ServletContext;
 import lombok.SneakyThrows;
 import org.cometd.annotation.server.ServerAnnotationProcessor;
 import org.cometd.bayeux.server.BayeuxServer;
@@ -16,6 +12,11 @@ import org.springframework.beans.factory.config.DestructionAwareBeanPostProcesso
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.ServletContextAware;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import javax.inject.Inject;
+import javax.servlet.ServletContext;
 
 
 @Component
